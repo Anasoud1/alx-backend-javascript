@@ -1,7 +1,7 @@
 export default function guardrail(mathFunction) {
   const arr = [];
   try {
-    mathFunction();
+    arr.push(mathFunction());
   } catch (error) {
     arr.push(String(error));
   } finally {
