@@ -28,7 +28,7 @@ export default class HolbertonCourse {
   }
 
   set students(value) {
-    if (Array.isArray(value) && value.every((item) => typeof (item) === 'string')) this._students = value;
-    else throw TypeError('Students must be a array of strings');
+    if (value instanceof Array && value.every((item) => typeof (item) === 'string')) this._students = value;
+    else throw TypeError('Students must be an array of strings');
   }
 }
