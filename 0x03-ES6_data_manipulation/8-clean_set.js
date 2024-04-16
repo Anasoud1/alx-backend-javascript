@@ -1,4 +1,4 @@
-export default function cleanSet(set, string) {
+export default function cleanSet(set, startString) {
   if (string === '') return '';
   const list = [...set].filter((element) => element.substring(0, string.length) === string);
   const arr = [];
